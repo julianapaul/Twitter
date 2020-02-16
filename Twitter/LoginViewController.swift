@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaults.standard.bool(forKey: "userLoggeedIn") == true { //if user logged in do this 
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true { //if user logged in do this 
             self.performSegue(withIdentifier: "loginToHome", sender: self)
         }
     }
@@ -38,14 +38,6 @@ class LoginViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }

@@ -16,6 +16,9 @@ class TweetCellTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tweetContent: UILabel!
     
+    var favorited:Bool = false
+    var tweeId:Int = -1
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
